@@ -77,50 +77,10 @@ const samradh: Developer = {
 
 ## 🚀 Featured Projects
 
-### 🔍 Visual Product Search Platform
-> *AI-powered e-commerce with multimodal search — find products by image or text*
-
-[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/SamradhSahni/visual-product-search-platform)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232a?style=flat-square&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-
-**What it does:** End-to-end AI-powered e-commerce platform where users can search products by uploading an image or typing a query — powered by **CLIP embeddings** (OpenAI's Contrastive Language-Image Pretraining) that map both image and text into a shared semantic vector space.
-
-**Key Engineering:**
-- Built a **Python ML microservice** exposing CLIP-powered vector similarity endpoints, decoupled from the main Node.js backend via REST
-- Implemented **image upload search** — user uploads any photo, system finds visually similar products using cosine similarity over CLIP embeddings
-- Delivered **personalized recommendation engine** (collaborative + content-based) and trending product analytics
-- Architected full **vendor/customer dual-role workflow** — product listings, inventory management, order flows, and admin dashboards
-- **React frontend** with responsive UI; **MongoDB** for product catalog and user data; **Node.js/Express** for API orchestration
-
----
-
-### 🌾 AgriSense — TRMS-ViT Crop Disease Classifier
-> *State-of-the-art Vision Transformer hybrid for 38-class plant disease detection*
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-
-**What it does:** An automated crop disease detection system for 38 crop–disease classes (Apple, Tomato, Potato, Grape, Corn, and more) built on a custom hybrid deep learning architecture — **TRMS-ViT (Token-Refined Multi-Scale Vision Transformer)**.
-
-**Key Engineering:**
-- **Designed TRMS-ViT from scratch** — a novel hybrid that fuses a pretrained `vit_base_patch16_224` backbone (global feature understanding) with a custom CNN Multi-Scale Token Extractor (local lesion/texture detection), connected via a **Cross-Attention Refinement** block
-- The cross-attention mechanism learns interactions between CNN tokens and ViT tokens, producing richer representations than either architecture alone
-- **Classification Head:** LayerNorm → Dense → GELU → Dropout → Softmax over 38 classes
-- **Training pipeline:** AdamW + CosineAnnealingLR + Label Smoothing + Gradient Clipping + Early Stopping; augmented dataset with RandomResizedCrop, Flip, Rotation, Brightness/Contrast, Translation
-- **Dataset:** 70/15/15 train/val/test split across 38 classes from publicly available agricultural image sources
-- **Deployed** as a **Streamlit web app** — upload a leaf image, get instant disease prediction with confidence score
-
----
-
 ### 🌿 KisanMitra AI — Hindi Agricultural Advisory Chatbot
 > *Fine-tuned mT5 + RAG system trained on 2.7M Kisan Call Centre records for 500M Hindi-speaking farmers*
 
+[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/SamradhSahni/KisanMitra_AI)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232a?style=flat-square&logo=react&logoColor=61DAFB)
@@ -149,9 +109,51 @@ const samradh: Developer = {
 
 ---
 
+### 🌾 AgriSense — TRMS-ViT Crop Disease Classifier
+> *State-of-the-art Vision Transformer hybrid for 38-class plant disease detection*
+
+[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/SamradhSahni/AgriSense)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+
+**What it does:** An automated crop disease detection system for 38 crop–disease classes (Apple, Tomato, Potato, Grape, Corn, and more) built on a custom hybrid deep learning architecture — **TRMS-ViT (Token-Refined Multi-Scale Vision Transformer)**.
+
+**Key Engineering:**
+- **Designed TRMS-ViT from scratch** — a novel hybrid that fuses a pretrained `vit_base_patch16_224` backbone (global feature understanding) with a custom CNN Multi-Scale Token Extractor (local lesion/texture detection), connected via a **Cross-Attention Refinement** block
+- The cross-attention mechanism learns interactions between CNN tokens and ViT tokens, producing richer representations than either architecture alone
+- **Classification Head:** LayerNorm → Dense → GELU → Dropout → Softmax over 38 classes
+- **Training pipeline:** AdamW + CosineAnnealingLR + Label Smoothing + Gradient Clipping + Early Stopping; augmented dataset with RandomResizedCrop, Flip, Rotation, Brightness/Contrast, Translation
+- **Dataset:** 70/15/15 train/val/test split across 38 classes from publicly available agricultural image sources
+- **Deployed** as a **Streamlit web app** — upload a leaf image, get instant disease prediction with confidence score
+
+---
+
+### 🔍 Visual Product Search Platform
+> *AI-powered e-commerce with multimodal search — find products by image or text*
+
+[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/SamradhSahni/visual-product-search-platform)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232a?style=flat-square&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+
+**What it does:** End-to-end AI-powered e-commerce platform where users can search products by uploading an image or typing a query — powered by **CLIP embeddings** (OpenAI's Contrastive Language-Image Pretraining) that map both image and text into a shared semantic vector space.
+
+**Key Engineering:**
+- Built a **Python ML microservice** exposing CLIP-powered vector similarity endpoints, decoupled from the main Node.js backend via REST
+- Implemented **image upload search** — user uploads any photo, system finds visually similar products using cosine similarity over CLIP embeddings
+- Delivered **personalized recommendation engine** (collaborative + content-based) and trending product analytics
+- Architected full **vendor/customer dual-role workflow** — product listings, inventory management, order flows, and admin dashboards
+- **React frontend** with responsive UI; **MongoDB** for product catalog and user data; **Node.js/Express** for API orchestration
+
+---
 ### ⚽ Football Player Tracking & Performance Analytics
 > *End-to-end CV pipeline: raw match footage → broadcast-grade tactical intelligence*
 
+[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/SamradhSahni/Football-Analysis-Using-YOLO)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
@@ -178,6 +180,7 @@ Raw Video → YOLOv8 Detection → ByteTrack → Homography → K-Means Teams �
 ### 📈 MarketLens — AI Financial Analytics Platform
 > *Full-stack ML platform for Nifty-50 stock analysis, LSTM forecasting & portfolio optimization*
 
+[![Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/SamradhSahni/MarketLens)
 ![React](https://img.shields.io/badge/React-20232a?style=flat-square&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
