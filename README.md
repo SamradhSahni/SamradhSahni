@@ -61,7 +61,7 @@ const samradh: Developer = {
 </td>
 <td>
 
-### 🏢 Backend Engineer Intern — [Coding Blocks](https://codingblocks.com)
+### 🏢 Web Developer Intern — [Coding Blocks](https://codingblocks.com)
 `Node.js` `Express.js` `MongoDB` `JWT` `REST API` `MVC`
 
 - Engineered and shipped production-grade **RESTful APIs** following strict **MVC architecture**, ensuring clean separation of concerns and maintainable codebase across multiple service modules
